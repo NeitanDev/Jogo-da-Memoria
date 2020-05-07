@@ -22,11 +22,9 @@
 
 Esse projeto foi desenvolvido utilizando:
 
-- [Node.js](https://nodejs.org/en/)
-- [Express](https://expressjs.com/pt-br/)
-- [Sequelize](https://sequelize.org/v5/)
-- [MySQL](https://www.mysql.com/)
-- [Socket.io](https://socket.io/docs)
+- [Java](https://www.oracle.com/br/java/)
+- [Java swing](https://docs.oracle.com/javase/7/docs/api/javax/swing/package-summary.html)
+
 
 ## 💻 Projeto
 
