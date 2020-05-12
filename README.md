@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="Jogo da Memoria" title="#delicinha" src="./images/icon2.png" width="200px" />
+    <img alt="Jogo da Memoria" title="#delicinha" src="./screenshots/icon.png" width="200px" />
 </h1>
 
 <h4 align="center">
