@@ -5,6 +5,8 @@
  */
 package jogo.da.memoria;
 
+import Telas.Jogo;
+
 /**
  *
  * @author natan
@@ -15,7 +17,8 @@ public class JogoDaMemoria {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Jogo jo = new Jogo();
+        jo.setVisible(true);
     }
     
 }
