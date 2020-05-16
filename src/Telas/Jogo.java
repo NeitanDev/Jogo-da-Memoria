@@ -19,13 +19,49 @@ public class Jogo extends javax.swing.JFrame {
      */
     public Jogo() {
         initComponents();
-        sortea();
+        //sortea();
     }
 
     public void sortea(){
-        ImageIcon imagem1= new ImageIcon(getClass().getResource("/Images/will.png"));
+        
+    }
+    
+    public void desconhecido(){
+        ImageIcon imagem1= new ImageIcon(getClass().getResource("/Images/desconhecido.png"));
         imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+        jLabel2.setIcon(imagem1);
+        jLabel4.setIcon(imagem1);
+        jLabel5.setIcon(imagem1);
+        jLabel6.setIcon(imagem1);
+        jLabel7.setIcon(imagem1);
+        jLabel8.setIcon(imagem1);
+        jLabel9.setIcon(imagem1);
+        jLabel10.setIcon(imagem1);
+        jLabel11.setIcon(imagem1);
+        jLabel12.setIcon(imagem1);
+        jLabel13.setIcon(imagem1);
+        jLabel14.setIcon(imagem1);
+        jLabel15.setIcon(imagem1);
+        jLabel17.setIcon(imagem1);
+        jLabel18.setIcon(imagem1);
+        jLabel19.setIcon(imagem1);
         jLabel20.setIcon(imagem1);
+        jLabel21.setIcon(imagem1);
+        jLabel22.setIcon(imagem1);
+        jLabel23.setIcon(imagem1);
+        jLabel24.setIcon(imagem1);
+        jLabel25.setIcon(imagem1);
+        jLabel26.setIcon(imagem1);
+        jLabel27.setIcon(imagem1);
+        jLabel28.setIcon(imagem1);
+        jLabel29.setIcon(imagem1);
+        jLabel30.setIcon(imagem1);
+        jLabel31.setIcon(imagem1);
+        jLabel32.setIcon(imagem1);
+        jLabel33.setIcon(imagem1);
+        jLabel34.setIcon(imagem1);
+        jLabel35.setIcon(imagem1);
+//        jLabel36.setIcon(imagem1);
     }
     
     @SuppressWarnings("unchecked")
@@ -77,6 +113,11 @@ public class Jogo extends javax.swing.JFrame {
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(58, 27, -1, -1));
 
         jButton1.setText("Start");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(322, 23, -1, -1));
 
         jButton2.setText("Reiniciar");
@@ -190,6 +231,10 @@ public class Jogo extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
+        desconhecido();
+        sortea();
+    }
     /**
      * @param args the command line arguments
      */
