@@ -15,7 +15,7 @@
 <br>
 
 <p align="center">
-  <img alt="Jogo da Memoria" src="./screenshots/desing.png" width="100%">
+  <img alt="Jogo da Memoria" src="./screenshots/desing2.png" width="100%">
 </p>
 
 ## :rocket: Tecnologias
