@@ -5,6 +5,7 @@
  */
 package Telas;
 
+import Class.img;
 import java.text.Normalizer.Form;
 import java.util.Random;
 import javax.swing.ImageIcon;
@@ -60,6 +61,22 @@ public class Jogo extends javax.swing.JFrame {
             }
             System.out.println("    ");
         }
+    }
+    
+    public String verifica(int num1, int num2){
+        select = false;
+        img sounou = new img();
+        String camin = sounou.caminho(m[num1][num2]);
+        System.out.println(camin);
+        return camin;
+    }
+    
+    public String init(int num1, int num2){
+        select = true;
+        img sounou = new img();
+        String camin = sounou.caminho(m[num1][num2]);
+        System.out.println(camin);
+        return camin;
     }
     
     public void desconhecido(){
@@ -438,9 +455,15 @@ public class Jogo extends javax.swing.JFrame {
         column = 0;
         
         if(select == true){
-            
+            String sent = verifica(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel4.setIcon(imagem1);
         } else if(select == false){
-            
+            String sent = init(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel4.setIcon(imagem1);
         }
     }//GEN-LAST:event_jLabel4MouseClicked
 
@@ -450,9 +473,15 @@ public class Jogo extends javax.swing.JFrame {
         column = 1;
         
         if(select == true){
-            
+            String sent = verifica(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel8.setIcon(imagem1);
         } else if(select == false){
-            
+            String sent = init(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel8.setIcon(imagem1);
         }
     }//GEN-LAST:event_jLabel8MouseClicked
 
@@ -462,9 +491,15 @@ public class Jogo extends javax.swing.JFrame {
         column = 2;
         
         if(select == true){
-            
+            String sent = verifica(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel9.setIcon(imagem1);
         } else if(select == false){
-            
+            String sent = init(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel9.setIcon(imagem1);
         }
     }//GEN-LAST:event_jLabel9MouseClicked
 
@@ -474,9 +509,15 @@ public class Jogo extends javax.swing.JFrame {
         column = 3;
         
         if(select == true){
-            
+            String sent = verifica(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel10.setIcon(imagem1);
         } else if(select == false){
-            
+            String sent = init(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel10.setIcon(imagem1);
         }
     }//GEN-LAST:event_jLabel10MouseClicked
 
@@ -486,9 +527,15 @@ public class Jogo extends javax.swing.JFrame {
         column = 4;
         
         if(select == true){
-            
+            String sent = verifica(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel12.setIcon(imagem1);
         } else if(select == false){
-            
+            String sent = init(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel12.setIcon(imagem1);
         }
     }//GEN-LAST:event_jLabel12MouseClicked
 
@@ -498,9 +545,15 @@ public class Jogo extends javax.swing.JFrame {
         column = 5;
         
         if(select == true){
-            
+            String sent = verifica(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel6.setIcon(imagem1);
         } else if(select == false){
-            
+            String sent = init(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel6.setIcon(imagem1);
         }
     }//GEN-LAST:event_jLabel6MouseClicked
 
@@ -510,9 +563,15 @@ public class Jogo extends javax.swing.JFrame {
         column = 6;
         
         if(select == true){
-            
+            String sent = verifica(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel11.setIcon(imagem1);
         } else if(select == false){
-            
+            String sent = init(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel11.setIcon(imagem1);
         }
     }//GEN-LAST:event_jLabel11MouseClicked
 
@@ -522,9 +581,15 @@ public class Jogo extends javax.swing.JFrame {
         column = 7;
         
         if(select == true){
-            
+            String sent = verifica(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel35.setIcon(imagem1);
         } else if(select == false){
-            
+            String sent = init(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel35.setIcon(imagem1);
         }
     }//GEN-LAST:event_jLabel35MouseClicked
 
@@ -534,9 +599,15 @@ public class Jogo extends javax.swing.JFrame {
         column = 0;
         
         if(select == true){
-            
+            String sent = verifica(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel7.setIcon(imagem1);
         } else if(select == false){
-            
+            String sent = init(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel7.setIcon(imagem1);
         }
     }//GEN-LAST:event_jLabel7MouseClicked
 
@@ -546,9 +617,15 @@ public class Jogo extends javax.swing.JFrame {
         column = 1;
         
         if(select == true){
-            
+            String sent = verifica(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel5.setIcon(imagem1);
         } else if(select == false){
-            
+            String sent = init(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel5.setIcon(imagem1);
         }
     }//GEN-LAST:event_jLabel5MouseClicked
 
@@ -558,9 +635,15 @@ public class Jogo extends javax.swing.JFrame {
         column = 2;
         
         if(select == true){
-            
+            String sent = verifica(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel2.setIcon(imagem1);
         } else if(select == false){
-            
+            String sent = init(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel2.setIcon(imagem1);
         }
     }//GEN-LAST:event_jLabel2MouseClicked
 
@@ -570,9 +653,15 @@ public class Jogo extends javax.swing.JFrame {
         column = 3;
         
         if(select == true){
-            
+            String sent = verifica(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel17.setIcon(imagem1);
         } else if(select == false){
-            
+            String sent = init(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel17.setIcon(imagem1);
         }
     }//GEN-LAST:event_jLabel17MouseClicked
 
@@ -582,9 +671,15 @@ public class Jogo extends javax.swing.JFrame {
         column = 4;
         
         if(select == true){
-            
+            String sent = verifica(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel14.setIcon(imagem1);
         } else if(select == false){
-            
+            String sent = init(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel14.setIcon(imagem1);
         }
     }//GEN-LAST:event_jLabel14MouseClicked
 
@@ -594,9 +689,15 @@ public class Jogo extends javax.swing.JFrame {
         column = 5;
         
         if(select == true){
-            
+            String sent = verifica(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel13.setIcon(imagem1);
         } else if(select == false){
-            
+            String sent = init(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel13.setIcon(imagem1);
         }
     }//GEN-LAST:event_jLabel13MouseClicked
 
@@ -606,9 +707,15 @@ public class Jogo extends javax.swing.JFrame {
         column = 6;
         
         if(select == true){
-            
+            String sent = verifica(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel15.setIcon(imagem1);
         } else if(select == false){
-            
+            String sent = init(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel15.setIcon(imagem1);
         }
     }//GEN-LAST:event_jLabel15MouseClicked
 
@@ -618,9 +725,15 @@ public class Jogo extends javax.swing.JFrame {
         column = 7;
         
         if(select == true){
-            
+            String sent = verifica(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel34.setIcon(imagem1);
         } else if(select == false){
-            
+            String sent = init(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel34.setIcon(imagem1);
         }
     }//GEN-LAST:event_jLabel34MouseClicked
 
@@ -630,9 +743,15 @@ public class Jogo extends javax.swing.JFrame {
         column = 0;
         
         if(select == true){
-            
+            String sent = verifica(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel18.setIcon(imagem1);
         } else if(select == false){
-            
+            String sent = init(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel18.setIcon(imagem1);
         }
     }//GEN-LAST:event_jLabel18MouseClicked
 
@@ -642,9 +761,15 @@ public class Jogo extends javax.swing.JFrame {
         column = 1;
         
         if(select == true){
-            
+            String sent = verifica(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel19.setIcon(imagem1);
         } else if(select == false){
-            
+            String sent = init(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel19.setIcon(imagem1);
         }
     }//GEN-LAST:event_jLabel19MouseClicked
 
@@ -654,9 +779,15 @@ public class Jogo extends javax.swing.JFrame {
         column = 2;
         
         if(select == true){
-            
+            String sent = verifica(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel20.setIcon(imagem1);
         } else if(select == false){
-            
+            String sent = init(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel20.setIcon(imagem1);
         }
     }//GEN-LAST:event_jLabel20MouseClicked
 
@@ -666,9 +797,15 @@ public class Jogo extends javax.swing.JFrame {
         column = 3;
         
         if(select == true){
-            
+            String sent = verifica(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel21.setIcon(imagem1);
         } else if(select == false){
-            
+            String sent = init(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel21.setIcon(imagem1);
         }
     }//GEN-LAST:event_jLabel21MouseClicked
 
@@ -678,9 +815,15 @@ public class Jogo extends javax.swing.JFrame {
         column = 4;
         
         if(select == true){
-            
+            String sent = verifica(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel22.setIcon(imagem1);
         } else if(select == false){
-            
+            String sent = init(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel22.setIcon(imagem1);
         }
     }//GEN-LAST:event_jLabel22MouseClicked
 
@@ -690,9 +833,15 @@ public class Jogo extends javax.swing.JFrame {
         column = 5;
         
         if(select == true){
-            
+            String sent = verifica(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel23.setIcon(imagem1);
         } else if(select == false){
-            
+            String sent = init(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel23.setIcon(imagem1);
         }
     }//GEN-LAST:event_jLabel23MouseClicked
 
@@ -702,9 +851,15 @@ public class Jogo extends javax.swing.JFrame {
         column = 6;
         
         if(select == true){
-            
+            String sent = verifica(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel24.setIcon(imagem1);
         } else if(select == false){
-            
+            String sent = init(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel24.setIcon(imagem1);
         }
     }//GEN-LAST:event_jLabel24MouseClicked
 
@@ -714,9 +869,15 @@ public class Jogo extends javax.swing.JFrame {
         column = 7;
         
         if(select == true){
-            
+            String sent = verifica(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel33.setIcon(imagem1);
         } else if(select == false){
-            
+            String sent = init(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel33.setIcon(imagem1);
         }
     }//GEN-LAST:event_jLabel33MouseClicked
 
@@ -726,9 +887,15 @@ public class Jogo extends javax.swing.JFrame {
         column = 0;
         
         if(select == true){
-            
+            String sent = verifica(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel25.setIcon(imagem1);
         } else if(select == false){
-            
+            String sent = init(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel25.setIcon(imagem1);
         }
     }//GEN-LAST:event_jLabel25MouseClicked
 
@@ -738,9 +905,15 @@ public class Jogo extends javax.swing.JFrame {
         column = 1;
         
         if(select == true){
-            
+            String sent = verifica(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel26.setIcon(imagem1);
         } else if(select == false){
-            
+            String sent = init(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel26.setIcon(imagem1);
         }
     }//GEN-LAST:event_jLabel26MouseClicked
 
@@ -750,9 +923,15 @@ public class Jogo extends javax.swing.JFrame {
         column = 2;
         
         if(select == true){
-            
+            String sent = verifica(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel27.setIcon(imagem1);
         } else if(select == false){
-            
+            String sent = init(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel27.setIcon(imagem1);
         }
     }//GEN-LAST:event_jLabel27MouseClicked
 
@@ -762,9 +941,15 @@ public class Jogo extends javax.swing.JFrame {
         column = 3;
         
         if(select == true){
-            
+            String sent = verifica(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel28.setIcon(imagem1);
         } else if(select == false){
-            
+            String sent = init(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel28.setIcon(imagem1);
         }
     }//GEN-LAST:event_jLabel28MouseClicked
 
@@ -774,9 +959,15 @@ public class Jogo extends javax.swing.JFrame {
         column = 4;
         
         if(select == true){
-            
+            String sent = verifica(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel29.setIcon(imagem1);
         } else if(select == false){
-            
+            String sent = init(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel29.setIcon(imagem1);
         }
     }//GEN-LAST:event_jLabel29MouseClicked
 
@@ -786,9 +977,15 @@ public class Jogo extends javax.swing.JFrame {
         column = 5;
         
         if(select == true){
-            
+            String sent = verifica(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel30.setIcon(imagem1);
         } else if(select == false){
-            
+            String sent = init(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel30.setIcon(imagem1);
         }
     }//GEN-LAST:event_jLabel30MouseClicked
 
@@ -798,9 +995,15 @@ public class Jogo extends javax.swing.JFrame {
         column = 6;
         
         if(select == true){
-            
+            String sent = verifica(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel31.setIcon(imagem1);
         } else if(select == false){
-            
+            String sent = init(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel31.setIcon(imagem1);
         }
     }//GEN-LAST:event_jLabel31MouseClicked
 
@@ -810,9 +1013,15 @@ public class Jogo extends javax.swing.JFrame {
         column = 7;
         
         if(select == true){
-            
+            String sent = verifica(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel32.setIcon(imagem1);
         } else if(select == false){
-            
+            String sent = init(line, column);
+            ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
+            imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
+            jLabel32.setIcon(imagem1);
         }
     }//GEN-LAST:event_jLabel32MouseClicked
 
