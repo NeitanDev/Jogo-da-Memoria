@@ -21,8 +21,19 @@ public class Jogo extends javax.swing.JFrame {
      */
     public Jogo() {
         initComponents();
-        //sortea();
     }
+    
+    public static void setTimeout(Runnable runnable, int delay){
+    new Thread(() -> {
+        try {
+            Thread.sleep(delay);
+            runnable.run();
+        }
+        catch (Exception e){
+            System.err.println(e);
+        }
+    }).start();
+}
 
     public void sortea(){
         while(num<17){
@@ -67,15 +78,223 @@ public class Jogo extends javax.swing.JFrame {
         select = false;
         img sounou = new img();
         String camin = sounou.caminho(m[num1][num2]);
-        System.out.println(camin);
+        diaz = m[num1][num2];
         return camin;
+    }
+    
+    public void voltadesconhecido(){
+        desconhecido.setImage(desconhecido.getImage().getScaledInstance(81, 71, 100));
+        if (terryline==0&&terrycolumn==0){
+            jLabel4.setIcon(desconhecido);
+        }
+        if (terryline==0&&terrycolumn==1){
+            jLabel8.setIcon(desconhecido);
+        }
+        if (terryline==0&&terrycolumn==2){
+            jLabel9.setIcon(desconhecido);
+        }
+        if (terryline==0&&terrycolumn==3){
+            jLabel10.setIcon(desconhecido);
+        }
+        if (terryline==0&&terrycolumn==4){
+            jLabel12.setIcon(desconhecido);
+        }
+        if (terryline==0&&terrycolumn==5){
+            jLabel6.setIcon(desconhecido);
+        }
+        if (terryline==0&&terrycolumn==6){
+            jLabel11.setIcon(desconhecido);
+        }
+        if (terryline==0&&terrycolumn==7){
+            jLabel35.setIcon(desconhecido);
+        }
+        /////////////////////////////////////
+        if (terryline==1&&terrycolumn==0){
+            jLabel7.setIcon(desconhecido);
+        }
+        if (terryline==1&&terrycolumn==1){
+            jLabel5.setIcon(desconhecido);
+        }
+        if (terryline==1&&terrycolumn==2){
+            jLabel2.setIcon(desconhecido);
+        }
+        if (terryline==1&&terrycolumn==3){
+            jLabel17.setIcon(desconhecido);
+        }
+        if (terryline==1&&terrycolumn==4){
+            jLabel14.setIcon(desconhecido);
+        }
+        if (terryline==1&&terrycolumn==5){
+            jLabel13.setIcon(desconhecido);
+        }
+        if (terryline==1&&terrycolumn==6){
+            jLabel15.setIcon(desconhecido);
+        }
+        if (terryline==1&&terrycolumn==7){
+            jLabel34.setIcon(desconhecido);
+        }
+        ////////////////////////////////////////
+        if (terryline==2&&terrycolumn==0){
+            jLabel18.setIcon(desconhecido);
+        }
+        if (terryline==2&&terrycolumn==1){
+            jLabel19.setIcon(desconhecido);
+        }
+        if (terryline==2&&terrycolumn==2){
+            jLabel20.setIcon(desconhecido);
+        }
+        if (terryline==2&&terrycolumn==3){
+            jLabel21.setIcon(desconhecido);
+        }
+        if (terryline==2&&terrycolumn==4){
+            jLabel22.setIcon(desconhecido);
+        }
+        if (terryline==2&&terrycolumn==5){
+            jLabel23.setIcon(desconhecido);
+        }
+        if (terryline==2&&terrycolumn==6){
+            jLabel24.setIcon(desconhecido);
+        }
+        if (terryline==2&&terrycolumn==7){
+            jLabel33.setIcon(desconhecido);
+        }
+        ///////////////////////////////////
+        if (terryline==3&&terrycolumn==0){
+            jLabel25.setIcon(desconhecido);
+        }
+        if (terryline==3&&terrycolumn==1){
+            jLabel26.setIcon(desconhecido);
+        }
+        if (terryline==3&&terrycolumn==2){
+            jLabel27.setIcon(desconhecido);
+        }
+        if (terryline==3&&terrycolumn==3){
+            jLabel28.setIcon(desconhecido);
+        }
+        if (terryline==3&&terrycolumn==4){
+            jLabel29.setIcon(desconhecido);
+        }
+        if (terryline==3&&terrycolumn==5){
+            jLabel30.setIcon(desconhecido);
+        }
+        if (terryline==3&&terrycolumn==6){
+            jLabel31.setIcon(desconhecido);
+        }
+        if (terryline==3&&terrycolumn==7){
+            jLabel32.setIcon(desconhecido);
+        }    
+    }
+    
+    public void enabled(){
+        if (terryline==0&&terrycolumn==0){
+            jLabel4.setEnabled(false);
+        }
+        if (terryline==0&&terrycolumn==1){
+            jLabel8.setEnabled(false);
+        }
+        if (terryline==0&&terrycolumn==2){
+            jLabel9.setEnabled(false);
+        }
+        if (terryline==0&&terrycolumn==3){
+            jLabel10.setEnabled(false);
+        }
+        if (terryline==0&&terrycolumn==4){
+            jLabel12.setEnabled(false);
+        }
+        if (terryline==0&&terrycolumn==5){
+            jLabel6.setEnabled(false);
+        }
+        if (terryline==0&&terrycolumn==6){
+            jLabel11.setEnabled(false);
+        }
+        if (terryline==0&&terrycolumn==7){
+            jLabel35.setEnabled(false);
+        }
+        /////////////////////////////////////
+        if (terryline==1&&terrycolumn==0){
+            jLabel7.setEnabled(false);
+        }
+        if (terryline==1&&terrycolumn==1){
+            jLabel5.setEnabled(false);
+        }
+        if (terryline==1&&terrycolumn==2){
+            jLabel2.setEnabled(false);
+        }
+        if (terryline==1&&terrycolumn==3){
+            jLabel17.setEnabled(false);
+        }
+        if (terryline==1&&terrycolumn==4){
+            jLabel14.setEnabled(false);
+        }
+        if (terryline==1&&terrycolumn==5){
+            jLabel13.setEnabled(false);
+        }
+        if (terryline==1&&terrycolumn==6){
+            jLabel15.setEnabled(false);
+        }
+        if (terryline==1&&terrycolumn==7){
+            jLabel34.setEnabled(false);
+        }
+        ////////////////////////////////////////
+        if (terryline==2&&terrycolumn==0){
+            jLabel18.setEnabled(false);
+        }
+        if (terryline==2&&terrycolumn==1){
+            jLabel19.setEnabled(false);
+        }
+        if (terryline==2&&terrycolumn==2){
+            jLabel20.setEnabled(false);
+        }
+        if (terryline==2&&terrycolumn==3){
+            jLabel21.setEnabled(false);
+        }
+        if (terryline==2&&terrycolumn==4){
+            jLabel22.setEnabled(false);
+        }
+        if (terryline==2&&terrycolumn==5){
+            jLabel23.setEnabled(false);
+        }
+        if (terryline==2&&terrycolumn==6){
+            jLabel24.setEnabled(false);
+        }
+        if (terryline==2&&terrycolumn==7){
+            jLabel33.setEnabled(false);
+        }
+        ///////////////////////////////////
+        if (terryline==3&&terrycolumn==0){
+            jLabel25.setEnabled(false);
+        }
+        if (terryline==3&&terrycolumn==1){
+            jLabel26.setEnabled(false);
+        }
+        if (terryline==3&&terrycolumn==2){
+            jLabel27.setEnabled(false);
+        }
+        if (terryline==3&&terrycolumn==3){
+            jLabel28.setEnabled(false);
+        }
+        if (terryline==3&&terrycolumn==4){
+            jLabel29.setEnabled(false);
+        }
+        if (terryline==3&&terrycolumn==5){
+            jLabel30.setEnabled(false);
+        }
+        if (terryline==3&&terrycolumn==6){
+            jLabel31.setEnabled(false);
+        }
+        if (terryline==3&&terrycolumn==7){
+            jLabel32.setEnabled(false);
+        }
     }
     
     public String init(int num1, int num2){
         select = true;
         img sounou = new img();
         String camin = sounou.caminho(m[num1][num2]);
-        System.out.println(camin);
+        terry = m[num1][num2];
+        terryline = num1;
+        terrycolumn = num2;
+//        System.out.println(terryline+" "+terrycolumn);
         return camin;
     }
     
@@ -117,11 +336,15 @@ public class Jogo extends javax.swing.JFrame {
 //        jLabel36.setIcon(imagem1);
     }
     
+    ImageIcon desconhecido= new ImageIcon(getClass().getResource("/Images/desconhecido.png"));
+    
     int m[][] = new int[4][8];
     Random ran = new Random();
     int num = 1;
     int line = 0, column = 0;
     boolean select = false;
+    int terry = 0, diaz = 0, terryline = 0, terrycolumn = 0;
+    boolean acertou = false;
     
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -459,6 +682,14 @@ public class Jogo extends javax.swing.JFrame {
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
             imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
             jLabel4.setIcon(imagem1);
+            if(terry==diaz){
+                setTimeout(() -> enabled(), 500);
+                setTimeout(() -> jLabel4.setEnabled(false), 500);
+            } else if(terry!=diaz){
+                desconhecido.setImage(desconhecido.getImage().getScaledInstance(81, 71, 100));
+                setTimeout(() -> jLabel4.setIcon(desconhecido), 500);
+                setTimeout(() -> voltadesconhecido(), 500);
+            }
         } else if(select == false){
             String sent = init(line, column);
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
@@ -477,6 +708,14 @@ public class Jogo extends javax.swing.JFrame {
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
             imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
             jLabel8.setIcon(imagem1);
+            if(terry==diaz){
+                setTimeout(() -> enabled(), 500);
+                setTimeout(() -> jLabel8.setEnabled(false), 500);
+            } else if(terry!=diaz){
+                desconhecido.setImage(desconhecido.getImage().getScaledInstance(81, 71, 100));
+                setTimeout(() -> jLabel8.setIcon(desconhecido), 1000);
+                setTimeout(() -> voltadesconhecido(), 1000);
+            }
         } else if(select == false){
             String sent = init(line, column);
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
@@ -495,6 +734,14 @@ public class Jogo extends javax.swing.JFrame {
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
             imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
             jLabel9.setIcon(imagem1);
+            if(terry==diaz){
+                setTimeout(() -> enabled(), 500);
+                setTimeout(() -> jLabel9.setEnabled(false), 500);
+            } else if(terry!=diaz){
+                desconhecido.setImage(desconhecido.getImage().getScaledInstance(81, 71, 100));
+                setTimeout(() -> jLabel9.setIcon(desconhecido), 1000);
+                setTimeout(() -> voltadesconhecido(), 1000);
+            }
         } else if(select == false){
             String sent = init(line, column);
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
@@ -513,6 +760,14 @@ public class Jogo extends javax.swing.JFrame {
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
             imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
             jLabel10.setIcon(imagem1);
+            if(terry==diaz){
+                setTimeout(() -> enabled(), 500);
+                setTimeout(() -> jLabel10.setEnabled(false), 500);
+            } else if(terry!=diaz){
+                desconhecido.setImage(desconhecido.getImage().getScaledInstance(81, 71, 100));
+                setTimeout(() -> jLabel10.setIcon(desconhecido), 1000);
+                setTimeout(() -> voltadesconhecido(), 1000);
+            }
         } else if(select == false){
             String sent = init(line, column);
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
@@ -531,6 +786,15 @@ public class Jogo extends javax.swing.JFrame {
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
             imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
             jLabel12.setIcon(imagem1);
+            if(terry==diaz){
+                setTimeout(() -> enabled(), 500);
+                setTimeout(() -> jLabel12.setEnabled(false), 500);
+                jLabel12.setEnabled(true);
+            } else if(terry!=diaz){
+                desconhecido.setImage(desconhecido.getImage().getScaledInstance(81, 71, 100));
+                setTimeout(() -> jLabel12.setIcon(desconhecido), 1000);
+                setTimeout(() -> voltadesconhecido(), 1000);
+            }
         } else if(select == false){
             String sent = init(line, column);
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
@@ -549,6 +813,14 @@ public class Jogo extends javax.swing.JFrame {
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
             imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
             jLabel6.setIcon(imagem1);
+            if(terry==diaz){
+                setTimeout(() -> enabled(), 500);
+                setTimeout(() ->jLabel6.setEnabled(false), 500);
+            } else if(terry!=diaz){
+                desconhecido.setImage(desconhecido.getImage().getScaledInstance(81, 71, 100));
+                setTimeout(() ->jLabel6.setIcon(desconhecido), 1000);
+                setTimeout(() -> voltadesconhecido(), 1000);
+            }
         } else if(select == false){
             String sent = init(line, column);
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
@@ -567,6 +839,14 @@ public class Jogo extends javax.swing.JFrame {
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
             imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
             jLabel11.setIcon(imagem1);
+            if(terry==diaz){
+                setTimeout(() -> enabled(), 500);
+                setTimeout(() ->jLabel11.setEnabled(false), 500);
+            } else if(terry!=diaz){
+                desconhecido.setImage(desconhecido.getImage().getScaledInstance(81, 71, 100));
+                setTimeout(() ->jLabel11.setIcon(desconhecido), 1000);
+                setTimeout(() -> voltadesconhecido(), 1000);
+            }
         } else if(select == false){
             String sent = init(line, column);
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
@@ -585,6 +865,14 @@ public class Jogo extends javax.swing.JFrame {
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
             imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
             jLabel35.setIcon(imagem1);
+            if(terry==diaz){
+                setTimeout(() -> enabled(), 500);
+                setTimeout(() ->jLabel35.setEnabled(false), 500);
+            } else if(terry!=diaz){
+                desconhecido.setImage(desconhecido.getImage().getScaledInstance(81, 71, 100));
+                setTimeout(() ->jLabel35.setIcon(desconhecido), 1000);
+                setTimeout(() -> voltadesconhecido(), 1000);
+            }
         } else if(select == false){
             String sent = init(line, column);
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
@@ -603,6 +891,14 @@ public class Jogo extends javax.swing.JFrame {
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
             imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
             jLabel7.setIcon(imagem1);
+            if(terry==diaz){
+                setTimeout(() -> enabled(), 500);
+                setTimeout(() ->jLabel7.setEnabled(false), 500);
+            } else if(terry!=diaz){
+                desconhecido.setImage(desconhecido.getImage().getScaledInstance(81, 71, 100));
+                setTimeout(() ->jLabel7.setIcon(desconhecido), 1000);
+                setTimeout(() -> voltadesconhecido(), 1000);
+            }
         } else if(select == false){
             String sent = init(line, column);
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
@@ -621,6 +917,14 @@ public class Jogo extends javax.swing.JFrame {
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
             imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
             jLabel5.setIcon(imagem1);
+            if(terry==diaz){
+                setTimeout(() -> enabled(), 500);
+                setTimeout(() ->jLabel5.setEnabled(false), 500);
+            } else if(terry!=diaz){
+                desconhecido.setImage(desconhecido.getImage().getScaledInstance(81, 71, 100));
+                setTimeout(() ->jLabel5.setIcon(desconhecido), 1000);
+                setTimeout(() -> voltadesconhecido(), 1000);
+            }
         } else if(select == false){
             String sent = init(line, column);
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
@@ -639,6 +943,14 @@ public class Jogo extends javax.swing.JFrame {
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
             imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
             jLabel2.setIcon(imagem1);
+            if(terry==diaz){
+                setTimeout(() -> enabled(), 500);
+                setTimeout(() ->jLabel2.setEnabled(false), 500);
+            } else if(terry!=diaz){
+                desconhecido.setImage(desconhecido.getImage().getScaledInstance(81, 71, 100));
+                setTimeout(() ->jLabel2.setIcon(desconhecido), 1000);
+                setTimeout(() -> voltadesconhecido(), 1000);
+            }
         } else if(select == false){
             String sent = init(line, column);
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
@@ -657,6 +969,14 @@ public class Jogo extends javax.swing.JFrame {
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
             imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
             jLabel17.setIcon(imagem1);
+            if(terry==diaz){
+                setTimeout(() -> enabled(), 500);
+                setTimeout(() ->jLabel17.setEnabled(false), 500);
+            } else if(terry!=diaz){
+                desconhecido.setImage(desconhecido.getImage().getScaledInstance(81, 71, 100));
+                setTimeout(() ->jLabel17.setIcon(desconhecido), 1000);
+                setTimeout(() -> voltadesconhecido(), 1000);
+            }
         } else if(select == false){
             String sent = init(line, column);
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
@@ -675,6 +995,14 @@ public class Jogo extends javax.swing.JFrame {
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
             imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
             jLabel14.setIcon(imagem1);
+            if(terry==diaz){
+                setTimeout(() -> enabled(), 500);
+                setTimeout(() ->jLabel14.setEnabled(false), 500);
+            } else if(terry!=diaz){
+                desconhecido.setImage(desconhecido.getImage().getScaledInstance(81, 71, 100));
+                setTimeout(() ->jLabel14.setIcon(desconhecido), 1000);
+                setTimeout(() -> voltadesconhecido(), 1000);
+            }
         } else if(select == false){
             String sent = init(line, column);
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
@@ -693,6 +1021,14 @@ public class Jogo extends javax.swing.JFrame {
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
             imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
             jLabel13.setIcon(imagem1);
+            if(terry==diaz){
+                setTimeout(() -> enabled(), 500);
+                setTimeout(() ->jLabel13.setEnabled(false), 500);
+            } else if(terry!=diaz){
+                desconhecido.setImage(desconhecido.getImage().getScaledInstance(81, 71, 100));
+                setTimeout(() ->jLabel13.setIcon(desconhecido), 1000);
+                setTimeout(() -> voltadesconhecido(), 1000);
+            }
         } else if(select == false){
             String sent = init(line, column);
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
@@ -711,6 +1047,14 @@ public class Jogo extends javax.swing.JFrame {
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
             imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
             jLabel15.setIcon(imagem1);
+            if(terry==diaz){
+                setTimeout(() -> enabled(), 500);
+                setTimeout(() ->jLabel15.setEnabled(false), 500);
+            } else if(terry!=diaz){
+                desconhecido.setImage(desconhecido.getImage().getScaledInstance(81, 71, 100));
+                setTimeout(() ->jLabel15.setIcon(desconhecido), 1000);
+                setTimeout(() -> voltadesconhecido(), 1000);
+            }
         } else if(select == false){
             String sent = init(line, column);
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
@@ -729,6 +1073,14 @@ public class Jogo extends javax.swing.JFrame {
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
             imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
             jLabel34.setIcon(imagem1);
+            if(terry==diaz){
+                setTimeout(() -> enabled(), 500);
+                setTimeout(() ->jLabel34.setEnabled(false), 500);
+            } else if(terry!=diaz){
+                desconhecido.setImage(desconhecido.getImage().getScaledInstance(81, 71, 100));
+                setTimeout(() ->jLabel34.setIcon(desconhecido), 1000);
+                setTimeout(() -> voltadesconhecido(), 1000);
+            }
         } else if(select == false){
             String sent = init(line, column);
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
@@ -747,6 +1099,14 @@ public class Jogo extends javax.swing.JFrame {
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
             imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
             jLabel18.setIcon(imagem1);
+            if(terry==diaz){
+                setTimeout(() -> enabled(), 500);
+                setTimeout(() ->jLabel18.setEnabled(false), 500);
+            } else if(terry!=diaz){
+                desconhecido.setImage(desconhecido.getImage().getScaledInstance(81, 71, 100));
+                setTimeout(() ->jLabel18.setIcon(desconhecido), 1000);
+                setTimeout(() -> voltadesconhecido(), 1000);
+            }
         } else if(select == false){
             String sent = init(line, column);
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
@@ -765,6 +1125,14 @@ public class Jogo extends javax.swing.JFrame {
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
             imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
             jLabel19.setIcon(imagem1);
+            if(terry==diaz){
+                setTimeout(() -> enabled(), 500);
+                setTimeout(() ->jLabel19.setEnabled(false), 500);
+            } else if(terry!=diaz){
+                desconhecido.setImage(desconhecido.getImage().getScaledInstance(81, 71, 100));
+                setTimeout(() ->jLabel19.setIcon(desconhecido), 1000);
+                setTimeout(() -> voltadesconhecido(), 1000);
+            }
         } else if(select == false){
             String sent = init(line, column);
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
@@ -783,6 +1151,14 @@ public class Jogo extends javax.swing.JFrame {
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
             imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
             jLabel20.setIcon(imagem1);
+            if(terry==diaz){
+                setTimeout(() -> enabled(), 500);
+                setTimeout(() ->jLabel20.setEnabled(false), 500);
+            } else if(terry!=diaz){
+                desconhecido.setImage(desconhecido.getImage().getScaledInstance(81, 71, 100));
+                setTimeout(() ->jLabel20.setIcon(desconhecido), 1000);
+                setTimeout(() -> voltadesconhecido(), 1000);
+            }
         } else if(select == false){
             String sent = init(line, column);
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
@@ -801,6 +1177,14 @@ public class Jogo extends javax.swing.JFrame {
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
             imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
             jLabel21.setIcon(imagem1);
+            if(terry==diaz){
+                setTimeout(() -> enabled(), 500);
+                setTimeout(() ->jLabel21.setEnabled(false), 500);
+            } else if(terry!=diaz){
+                desconhecido.setImage(desconhecido.getImage().getScaledInstance(81, 71, 100));
+                setTimeout(() ->jLabel21.setIcon(desconhecido), 1000);
+                setTimeout(() -> voltadesconhecido(), 1000);
+            }
         } else if(select == false){
             String sent = init(line, column);
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
@@ -819,6 +1203,14 @@ public class Jogo extends javax.swing.JFrame {
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
             imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
             jLabel22.setIcon(imagem1);
+            if(terry==diaz){
+                setTimeout(() -> enabled(), 500);
+                setTimeout(() ->jLabel22.setEnabled(false), 500);
+            } else if(terry!=diaz){
+                desconhecido.setImage(desconhecido.getImage().getScaledInstance(81, 71, 100));
+                setTimeout(() ->jLabel22.setIcon(desconhecido), 1000);
+                setTimeout(() -> voltadesconhecido(), 1000);
+            }
         } else if(select == false){
             String sent = init(line, column);
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
@@ -837,6 +1229,14 @@ public class Jogo extends javax.swing.JFrame {
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
             imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
             jLabel23.setIcon(imagem1);
+            if(terry==diaz){
+                setTimeout(() -> enabled(), 500);
+                setTimeout(() ->jLabel23.setEnabled(false), 500);
+            } else if(terry!=diaz){
+                desconhecido.setImage(desconhecido.getImage().getScaledInstance(81, 71, 100));
+                setTimeout(() ->jLabel23.setIcon(desconhecido), 1000);
+                setTimeout(() -> voltadesconhecido(), 1000);
+            }
         } else if(select == false){
             String sent = init(line, column);
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
@@ -855,6 +1255,14 @@ public class Jogo extends javax.swing.JFrame {
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
             imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
             jLabel24.setIcon(imagem1);
+            if(terry==diaz){
+                setTimeout(() -> enabled(), 500);
+                setTimeout(() ->jLabel24.setEnabled(false), 500);
+            } else if(terry!=diaz){
+                desconhecido.setImage(desconhecido.getImage().getScaledInstance(81, 71, 100));
+                setTimeout(() ->jLabel24.setIcon(desconhecido), 1000);
+                setTimeout(() -> voltadesconhecido(), 1000);
+            }
         } else if(select == false){
             String sent = init(line, column);
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
@@ -873,6 +1281,14 @@ public class Jogo extends javax.swing.JFrame {
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
             imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
             jLabel33.setIcon(imagem1);
+            if(terry==diaz){
+                setTimeout(() -> enabled(), 500);
+                setTimeout(() ->jLabel33.setEnabled(false), 500);
+            } else if(terry!=diaz){
+                desconhecido.setImage(desconhecido.getImage().getScaledInstance(81, 71, 100));
+                setTimeout(() ->jLabel33.setIcon(desconhecido), 1000);
+                setTimeout(() -> voltadesconhecido(), 1000);
+            }
         } else if(select == false){
             String sent = init(line, column);
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
@@ -891,6 +1307,14 @@ public class Jogo extends javax.swing.JFrame {
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
             imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
             jLabel25.setIcon(imagem1);
+            if(terry==diaz){
+                setTimeout(() -> enabled(), 500);
+                setTimeout(() ->jLabel25.setEnabled(false), 500);
+            } else if(terry!=diaz){
+                desconhecido.setImage(desconhecido.getImage().getScaledInstance(81, 71, 100));
+                setTimeout(() ->jLabel25.setIcon(desconhecido), 1000);
+                setTimeout(() -> voltadesconhecido(), 1000);
+            }
         } else if(select == false){
             String sent = init(line, column);
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
@@ -909,7 +1333,15 @@ public class Jogo extends javax.swing.JFrame {
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
             imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
             jLabel26.setIcon(imagem1);
-        } else if(select == false){
+            if(terry==diaz){
+                setTimeout(() -> enabled(), 500);
+                setTimeout(() ->jLabel26.setEnabled(false), 500);
+            } else if(terry!=diaz){
+                desconhecido.setImage(desconhecido.getImage().getScaledInstance(81, 71, 100));
+                setTimeout(() ->jLabel26.setIcon(desconhecido), 1000);
+                setTimeout(() -> voltadesconhecido(), 1000);
+            }
+        } else if(select == false){ 
             String sent = init(line, column);
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
             imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
@@ -927,6 +1359,14 @@ public class Jogo extends javax.swing.JFrame {
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
             imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
             jLabel27.setIcon(imagem1);
+            if(terry==diaz){
+                setTimeout(() -> enabled(), 500);
+                setTimeout(() ->jLabel27.setEnabled(false), 500);
+            } else if(terry!=diaz){
+                desconhecido.setImage(desconhecido.getImage().getScaledInstance(81, 71, 100));
+                setTimeout(() ->jLabel27.setIcon(desconhecido), 1000);
+                setTimeout(() -> voltadesconhecido(), 1000);
+            }
         } else if(select == false){
             String sent = init(line, column);
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
@@ -945,6 +1385,14 @@ public class Jogo extends javax.swing.JFrame {
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
             imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
             jLabel28.setIcon(imagem1);
+            if(terry==diaz){
+                setTimeout(() -> enabled(), 500);
+                setTimeout(() ->jLabel28.setEnabled(false), 500);
+            } else if(terry!=diaz){
+                desconhecido.setImage(desconhecido.getImage().getScaledInstance(81, 71, 100));
+                setTimeout(() ->jLabel28.setIcon(desconhecido), 1000);
+                setTimeout(() -> voltadesconhecido(), 1000);
+            }
         } else if(select == false){
             String sent = init(line, column);
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
@@ -963,6 +1411,14 @@ public class Jogo extends javax.swing.JFrame {
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
             imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
             jLabel29.setIcon(imagem1);
+            if(terry==diaz){
+                setTimeout(() -> enabled(), 500);
+                setTimeout(() ->jLabel29.setEnabled(false), 500);
+            } else if(terry!=diaz){
+                desconhecido.setImage(desconhecido.getImage().getScaledInstance(81, 71, 100));
+                setTimeout(() ->jLabel29.setIcon(desconhecido), 1000);
+                setTimeout(() -> voltadesconhecido(), 1000);
+            }
         } else if(select == false){
             String sent = init(line, column);
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
@@ -981,6 +1437,14 @@ public class Jogo extends javax.swing.JFrame {
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
             imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
             jLabel30.setIcon(imagem1);
+            if(terry==diaz){
+                setTimeout(() -> enabled(), 500);
+                setTimeout(() ->jLabel30.setEnabled(false), 500);
+            } else if(terry!=diaz){
+                desconhecido.setImage(desconhecido.getImage().getScaledInstance(81, 71, 100));
+                setTimeout(() ->jLabel30.setIcon(desconhecido), 1000);
+                setTimeout(() -> voltadesconhecido(), 1000);
+            }
         } else if(select == false){
             String sent = init(line, column);
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
@@ -999,6 +1463,14 @@ public class Jogo extends javax.swing.JFrame {
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
             imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
             jLabel31.setIcon(imagem1);
+            if(terry==diaz){
+                setTimeout(() -> enabled(), 500);
+                setTimeout(() ->jLabel31.setEnabled(false), 500);
+            } else if(terry!=diaz){
+                desconhecido.setImage(desconhecido.getImage().getScaledInstance(81, 71, 100));
+                setTimeout(() ->jLabel31.setIcon(desconhecido), 1000);
+                setTimeout(() -> voltadesconhecido(), 1000);
+            }
         } else if(select == false){
             String sent = init(line, column);
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
@@ -1017,6 +1489,14 @@ public class Jogo extends javax.swing.JFrame {
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
             imagem1.setImage(imagem1.getImage().getScaledInstance(81, 71, 100));
             jLabel32.setIcon(imagem1);
+            if(terry==diaz){
+                setTimeout(() -> enabled(), 500);
+                setTimeout(() ->jLabel32.setEnabled(false), 500);
+            } else if(terry!=diaz){
+                desconhecido.setImage(desconhecido.getImage().getScaledInstance(81, 71, 100));
+                setTimeout(() ->jLabel32.setIcon(desconhecido), 1000);
+                setTimeout(() -> voltadesconhecido(), 1000);
+            }
         } else if(select == false){
             String sent = init(line, column);
             ImageIcon imagem1= new ImageIcon(getClass().getResource(sent));
